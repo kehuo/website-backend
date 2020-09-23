@@ -65,8 +65,8 @@ def get_welcome_data(args):
     """
     res = []
     count = args.get("count", 20) if args else 20
-    print(args)
-    print("count=%s" % count)
+    # print(args)
+    # print("count=%s" % count)
     for i in range(count):
         res.append(
             {"id": "welcome_list_%s" % i,

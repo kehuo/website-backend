@@ -1,13 +1,13 @@
-# @File: resources.py
+# @File: resource.py
 # @Author: Kevin Huo
-# @Date: 2020/9/23
-
+# @Date: 2020/9/24
 
 from flask_restful import Resource, reqparse
 from common.utils import encoding_resp_utf8
-from core.logics.welcome import get_welcome_data
+from core.welcome.logics.welcome import get_welcome_data
 
 
+# welcome
 class Welcome(Resource):
     def get(self, **auth):
         parser = reqparse.RequestParser()

@@ -12,7 +12,7 @@ RUN source ~/.bashrc \
 	&& pip install -r ./requirements.txt
 
 CMD ["/root/miniconda3/envs/myenv/bin/python", "server.py"]
-
+# docker run -itd -p 8050:5000 --name back backimg:v1
 
 # FROM python:3.7-slim-buster
 # WORKDIR /data/project
